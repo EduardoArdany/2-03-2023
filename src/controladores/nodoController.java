@@ -11,15 +11,13 @@ import vistas.frmPrincipal;
 public class nodoController implements ActionListener {
     frmPrincipal vistaPrincipal;
     frmAgregarPacientes vistaAgregar;
-    frmListarPacientes vistaListar;
+    frmListarPacientes vistaPacientes;
     Lista listaGOD;
     
-    public nodoController( frmPrincipal vistaPrincipal, frmAgregarPacientes vistaAgregar,frmListarPacientes 
-            vistaListar, Lista listaGOD){
+    public nodoController( frmPrincipal vistaPrincipal, frmAgregarPacientes vistaNodos, Lista listaGOD){
     
     this.vistaPrincipal = vistaPrincipal;
-    this.vistaAgregar = vistaAgregar;
-    this.vistaListar = vistaListar;
+    this.vistaAgregar = vistaNodos;
     this.listaGOD = listaGOD;    
     
     this.vistaPrincipal.btnAgregar.addActionListener(this);
@@ -41,7 +39,7 @@ public class nodoController implements ActionListener {
            this.vistaAgregar.setVisible(true);
     }
        if(e.getSource() == this.vistaAgregar.btnApilar){
-        this.listaGOD.Apilar(Integer.parseInt(this.vistaAgregar.txtDato.getText())); 
+        this.listaGOD.Apilar(this.vistaAgregar.txtDato.getText()); 
         this.vistaAgregar.txtLista.setText(this.listaGOD.ListarNodos());
     }
     }

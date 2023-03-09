@@ -4,15 +4,15 @@ package modelos;
 import javax.swing.JOptionPane;
 
 public class Lista {
-    Nodo primero;
-    Nodo Auxiliar;
-    String cadena ="";
+    modeloApellidos primero;
+    modeloApellidos Auxiliar;
+    String cadena =" ";
     
     public void Apilar(){     
     }
    
-    public void Apilar(int dato){
-    Nodo nodoNuevo = new Nodo(dato);
+    public void Apilar(String dato){
+    modeloApellidos nodoNuevo = new modeloApellidos(dato);
     if(primero == null){
       primero = nodoNuevo;  
     }

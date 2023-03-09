@@ -8,11 +8,11 @@ public class main {
 
     public static void main(String[] args) {
         frmPrincipal vistaPrincipal = new frmPrincipal();
-        frmAgregarPacientes vistaAgregar = new frmAgregarPacientes(vistaPrincipal,true);
+        frmAgregarPacientes vistaNodos = new frmAgregarPacientes(vistaPrincipal,true);
         Lista NuevaLista = new Lista();
         
         //LEVANTAR EL CONTROLADOR
-        nodoController nuevoControlador = new nodoController(vistaPrincipal, vistaAgregar, NuevaLista);
+        nodoController nuevoControlador = new nodoController(vistaPrincipal, vistaNodos, NuevaLista);
     }
     
 }
