@@ -106,6 +106,6 @@ public class frmPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnAgregar;
-    private javax.swing.JButton btnListar;
+    public javax.swing.JButton btnListar;
     // End of variables declaration//GEN-END:variables
 }
